@@ -42,7 +42,6 @@ class Customer:
         self.first_name=first_name.lower()
         self.family_name=family_name.lower()
         self.age = age
-        print(self.first_name + ' age # ' + str(age))
 
 
 ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
@@ -77,11 +76,11 @@ class Customer:
 
     def entry_fee(self):
         if self.age < 20:
-            return '#' + str(1000)
+            return str(1000)
         elif 20 <= self.age < 65:
-            return '#' + str(1500)
+            return str(1500)
         else:
-            return '#'+ str(1200)
+            return str(1200)
 
 
 ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
